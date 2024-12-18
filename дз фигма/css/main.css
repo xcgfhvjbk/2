@@ -1,0 +1,163 @@
+* {
+  --main-color: #007765;
+  --light-color: white;
+  --max-width: 1219px;
+  --header-height: 84px;
+  --footer-height: 176px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.block-header {
+  background-color: var(--main-color);
+  padding: 0 55px;  
+  display: flex;
+  position: sticky;
+  top: 0px;
+  height: var(--header-height);
+}
+
+.header-logo {
+  margin: auto;
+  margin-left: 0;
+}
+
+.header-link-block {  
+  margin: auto;  
+  margin-right: 0;
+}
+
+.header-link {
+  color: var(--light-color);
+  display: inline-block;  
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 4px;
+}
+
+.anchor {
+  position: relative;
+  top: -65px;
+  display: block;
+  visibility: hidden;
+}
+
+.content-color-1 {
+  background-color: #eeeeee;
+}
+
+.content-color-2 {
+  background-color: var(--light-color);;
+}
+
+.block-team,
+.block-desc,
+.block-problem {
+  box-sizing: border-box;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 55px;
+}
+
+.block-desc {
+  background-color: var(--light-color);
+}
+
+.block-header-pic,
+.block-middle-pic {
+  color: var(--light-color);
+  font-weight: 500;
+  text-align: center;
+  padding-top: 128px;
+  padding-bottom: 128px;  
+}
+
+.block-header-pic {
+  background: url(../img/header.png);
+  font-size: 72px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.block-middle-pic {
+  background: url(../img/middle.png);
+  font-size: 48px;
+  font-style: italic;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.block-team {
+  text-align: center;
+  padding: 55px 0px 25px 0px;  
+}
+
+.picture-text {
+  max-width: calc(0.73 * var(--max-width));  
+  margin: auto;
+}
+
+.logo-inline {
+  float: left;
+  margin-top: 30px;
+  margin-right: 35px;
+}
+
+.team {
+  padding: 30px 0 30px 0;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  margin: auto;
+}
+
+.user {
+  flex-basis: 33%;  
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.user-name {
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.user-role {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.block-footer {
+  background-color: #333;
+  padding: 0 55px;  
+  display: flex;  
+  height: var(--footer-height);
+}
+
+.footer-text {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  color: var(--light-color);
+  font-size: 18px;  
+}
+
+.title {
+  color: var(--main-color);
+  font-size: 64px;
+  text-align: center;
+  font-weight: 700;
+}
+
+p {
+  font-size: 32px;
+}
